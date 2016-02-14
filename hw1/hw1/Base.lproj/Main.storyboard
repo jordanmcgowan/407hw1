@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hw1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLb-17-bGQ">
+                                <rect key="frame" x="266" y="373" width="69" height="30"/>
+                                <state key="normal" title="Start Quiz">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="F30-p9-HFa" kind="show" id="1if-SM-iir"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to 'The Quiz of The Life'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mj-d0-hQw">
+                                <rect key="frame" x="169" y="28" width="258" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.45645703595126952" blue="0.0" alpha="0.43787677304964534" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6mj-d0-hQw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Wus-Ld-Ldh"/>
+                            <constraint firstItem="6mj-d0-hQw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fRH-qm-REG"/>
+                            <constraint firstItem="eLb-17-bGQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gow-ml-sFp"/>
+                            <constraint firstItem="eLb-17-bGQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sjA-gN-0er"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eKJ-PN-xIE">
+            <objects>
+                <viewController id="F30-p9-HFa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WQC-CK-EZs"/>
+                        <viewControllerLayoutGuide type="bottom" id="F6a-2h-hf8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I73-lr-997">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXU-Sf-Jcb">
+                                <rect key="frame" x="260" y="28" width="81" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="What is the name of the most recent Kanye West album?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KpC-se-rRY">
+                                <rect key="frame" x="211" y="74" width="178" height="63"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="178" id="cCl-Yb-rj3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Answer Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkq-8k-wfp">
+                                <rect key="frame" x="232" y="169" width="137" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCQ-Ru-qEJ">
+                                <rect key="frame" x="284" y="285" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="3mj-i4-5GF" kind="show" id="Jwo-iH-y0B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uCQ-Ru-qEJ" firstAttribute="centerX" secondItem="I73-lr-997" secondAttribute="centerX" id="5wl-0Z-VXI"/>
+                            <constraint firstItem="kXU-Sf-Jcb" firstAttribute="centerX" secondItem="I73-lr-997" secondAttribute="centerX" id="Acd-cB-bwX"/>
+                            <constraint firstItem="kXU-Sf-Jcb" firstAttribute="top" secondItem="WQC-CK-EZs" secondAttribute="bottom" constant="8" id="Gf6-7S-das"/>
+                            <constraint firstItem="kkq-8k-wfp" firstAttribute="centerX" secondItem="I73-lr-997" secondAttribute="centerX" id="OKS-gP-Zsp"/>
+                            <constraint firstItem="uCQ-Ru-qEJ" firstAttribute="top" secondItem="kkq-8k-wfp" secondAttribute="bottom" constant="86" id="XPd-cj-76u"/>
+                            <constraint firstItem="KpC-se-rRY" firstAttribute="top" secondItem="WQC-CK-EZs" secondAttribute="bottom" constant="54" id="aHH-qJ-REi"/>
+                            <constraint firstItem="kkq-8k-wfp" firstAttribute="top" secondItem="KpC-se-rRY" secondAttribute="bottom" constant="32" id="r6g-tl-tbZ"/>
+                            <constraint firstItem="KpC-se-rRY" firstAttribute="centerX" secondItem="I73-lr-997" secondAttribute="centerX" id="wJS-VE-tOV"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUk-Av-yPt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382" y="1115"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hwf-9A-kJ4">
+            <objects>
+                <viewController id="27T-or-6mr" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lZ4-ZD-IbS"/>
+                        <viewControllerLayoutGuide type="bottom" id="8zK-OH-DOf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pcu-vW-YHb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULB-Do-NW1">
+                                <rect key="frame" x="272" y="28" width="56" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ULB-Do-NW1" firstAttribute="centerX" secondItem="pcu-vW-YHb" secondAttribute="centerX" id="VWG-Uf-Zw0"/>
+                            <constraint firstItem="ULB-Do-NW1" firstAttribute="top" secondItem="lZ4-ZD-IbS" secondAttribute="bottom" constant="8" id="dPt-JG-Jan"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SGY-WJ-xUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0EF-df-eqQ">
+            <objects>
+                <viewController id="3mj-i4-5GF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1FF-Ce-xGx"/>
+                        <viewControllerLayoutGuide type="bottom" id="znY-U7-UNX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ica-uh-tMT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJU-g1-YBF">
+                                <rect key="frame" x="258" y="28" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="What Kanye album is this image the cover of? " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wMy-cc-thN">
+                                <rect key="frame" x="180" y="175" width="240" height="49"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s-l96.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Q1m-mN-Org">
+                                <rect key="frame" x="252" y="57" width="96" height="96"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwC-1Q-ac2">
+                                <rect key="frame" x="284" y="285" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="27T-or-6mr" kind="show" id="Dsz-XX-sd3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Answer Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z1a-vL-So4">
+                                <rect key="frame" x="229" y="247" width="142" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wMy-cc-thN" firstAttribute="top" secondItem="Q1m-mN-Org" secondAttribute="bottom" constant="22" id="AEy-zc-iKo"/>
+                            <constraint firstItem="pwC-1Q-ac2" firstAttribute="top" secondItem="z1a-vL-So4" secondAttribute="bottom" constant="23" id="G1L-WD-l9e"/>
+                            <constraint firstItem="z1a-vL-So4" firstAttribute="top" secondItem="wMy-cc-thN" secondAttribute="bottom" constant="21" id="ICy-u6-e0c"/>
+                            <constraint firstItem="xJU-g1-YBF" firstAttribute="top" secondItem="1FF-Ce-xGx" secondAttribute="bottom" constant="8" id="INu-5C-C17"/>
+                            <constraint firstItem="Q1m-mN-Org" firstAttribute="top" secondItem="xJU-g1-YBF" secondAttribute="bottom" constant="8" id="Kvf-BE-lTD"/>
+                            <constraint firstItem="pwC-1Q-ac2" firstAttribute="centerX" secondItem="Ica-uh-tMT" secondAttribute="centerX" id="TDR-2c-vEO"/>
+                            <constraint firstItem="wMy-cc-thN" firstAttribute="centerX" secondItem="Ica-uh-tMT" secondAttribute="centerX" id="WSD-j1-eYe"/>
+                            <constraint firstItem="Q1m-mN-Org" firstAttribute="centerX" secondItem="Ica-uh-tMT" secondAttribute="centerX" id="nRF-q3-0Id"/>
+                            <constraint firstItem="z1a-vL-So4" firstAttribute="centerX" secondItem="Ica-uh-tMT" secondAttribute="centerX" id="qf9-0X-Uv9"/>
+                            <constraint firstItem="xJU-g1-YBF" firstAttribute="centerX" secondItem="Ica-uh-tMT" secondAttribute="centerX" id="sjS-W4-8pP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PaT-wN-LEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="1115"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="s-l96.jpg" width="96" height="96"/>
+    </resources>
+</document>
