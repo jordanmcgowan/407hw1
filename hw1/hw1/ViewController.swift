@@ -8,13 +8,18 @@
 
 import UIKit
 var correctAnswers = 0;
-var numQuestions = 2;
+var numQuestions = 3;
+var q1Solution = "The Life Of Pablo";
+var q2Solution = "The College Dropout";
+var q3Solution = 21;
 
 class ViewController: UIViewController {
     
 
+    @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var quizName: UILabel!
     @IBOutlet weak var startQuiz: UIButton!
+
     
     
     override func viewDidLoad() {

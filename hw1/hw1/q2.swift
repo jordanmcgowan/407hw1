@@ -13,7 +13,6 @@ class q2: UIViewController {
     @IBOutlet weak var answer: UITextField!
     @IBOutlet weak var correct: UITextField!
     
-    var solution = "The College Dropout";
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +25,7 @@ class q2: UIViewController {
     }
     
     @IBAction func nextPressed(sender: AnyObject) {
-        if solution.lowercaseString == answer.text?.lowercaseString {
+        if q2Solution.lowercaseString == answer.text?.lowercaseString {
             correctAnswers += 1;
         }
     }

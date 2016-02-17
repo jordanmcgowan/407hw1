@@ -10,6 +10,9 @@
 		4B4E1FBD1C74149C00813425 /* q1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E1FBC1C74149C00813425 /* q1.swift */; };
 		4B4E1FBF1C74153100813425 /* q2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E1FBE1C74153100813425 /* q2.swift */; };
 		4B4E1FC11C74154300813425 /* results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E1FC01C74154300813425 /* results.swift */; };
+		4B4E1FC31C74CB8100813425 /* tlop.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4E1FC21C74CB8100813425 /* tlop.png */; };
+		4B4E1FC51C74DFE300813425 /* grammyAward.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B4E1FC41C74DFE300813425 /* grammyAward.png */; };
+		4B4E1FC71C74E19900813425 /* q3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4E1FC61C74E19900813425 /* q3.swift */; };
 		4BF09E891C7135D4002EB7B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF09E881C7135D4002EB7B5 /* AppDelegate.swift */; };
 		4BF09E8B1C7135D4002EB7B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF09E8A1C7135D4002EB7B5 /* ViewController.swift */; };
 		4BF09E8E1C7135D4002EB7B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BF09E8C1C7135D4002EB7B5 /* Main.storyboard */; };
@@ -42,6 +45,9 @@
 		4B4E1FBC1C74149C00813425 /* q1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = q1.swift; sourceTree = "<group>"; };
 		4B4E1FBE1C74153100813425 /* q2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = q2.swift; sourceTree = "<group>"; };
 		4B4E1FC01C74154300813425 /* results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = results.swift; sourceTree = "<group>"; };
+		4B4E1FC21C74CB8100813425 /* tlop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tlop.png; path = ../../../../../Pictures/tlop.png; sourceTree = "<group>"; };
+		4B4E1FC41C74DFE300813425 /* grammyAward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = grammyAward.png; path = ../../../../../Pictures/grammyAward.png; sourceTree = "<group>"; };
+		4B4E1FC61C74E19900813425 /* q3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = q3.swift; sourceTree = "<group>"; };
 		4BF09E851C7135D4002EB7B5 /* hw1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hw1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BF09E881C7135D4002EB7B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BF09E8A1C7135D4002EB7B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +93,8 @@
 		4BF09E7C1C7135D4002EB7B5 = {
 			isa = PBXGroup;
 			children = (
+				4B4E1FC41C74DFE300813425 /* grammyAward.png */,
+				4B4E1FC21C74CB8100813425 /* tlop.png */,
 				4BF09EBA1C714775002EB7B5 /* s-l96.jpg */,
 				4BF09EB61C71425B002EB7B5 /* Kanyewest_collegedropout.jpg */,
 				4BF09E871C7135D4002EB7B5 /* hw1 */,
@@ -118,6 +126,7 @@
 				4B4E1FBC1C74149C00813425 /* q1.swift */,
 				4B4E1FBE1C74153100813425 /* q2.swift */,
 				4B4E1FC01C74154300813425 /* results.swift */,
+				4B4E1FC61C74E19900813425 /* q3.swift */,
 			);
 			path = hw1;
 			sourceTree = "<group>";
@@ -248,6 +257,8 @@
 				4BF09EB71C71425B002EB7B5 /* Kanyewest_collegedropout.jpg in Resources */,
 				4BF09E901C7135D4002EB7B5 /* Assets.xcassets in Resources */,
 				4BF09EBB1C714775002EB7B5 /* s-l96.jpg in Resources */,
+				4B4E1FC31C74CB8100813425 /* tlop.png in Resources */,
+				4B4E1FC51C74DFE300813425 /* grammyAward.png in Resources */,
 				4BF09E8E1C7135D4002EB7B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B4E1FC11C74154300813425 /* results.swift in Sources */,
+				4B4E1FC71C74E19900813425 /* q3.swift in Sources */,
 				4BF09E8B1C7135D4002EB7B5 /* ViewController.swift in Sources */,
 				4B4E1FBD1C74149C00813425 /* q1.swift in Sources */,
 				4B4E1FBF1C74153100813425 /* q2.swift in Sources */,

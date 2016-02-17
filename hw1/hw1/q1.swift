@@ -13,8 +13,6 @@ import UIKit
 class q1: UIViewController {
     @IBOutlet weak var question: UITextView!
     @IBOutlet weak var answer: UITextField!
-
-    var solution = "The Life Of Pablo";
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +25,7 @@ class q1: UIViewController {
     }
     
     @IBAction func nextPressed(sender: AnyObject) {
-        if solution.lowercaseString == answer.text?.lowercaseString {
+        if q1Solution.lowercaseString == answer.text?.lowercaseString {
             correctAnswers++;
         }
     }

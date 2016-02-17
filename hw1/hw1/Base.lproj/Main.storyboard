@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLb-17-bGQ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLb-17-bGQ">
                                 <rect key="frame" x="266" y="373" width="69" height="30"/>
                                 <state key="normal" title="Start Quiz">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="F30-p9-HFa" kind="show" id="YKk-V3-b6j"/>
@@ -29,16 +29,16 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to 'The Quiz of The Life'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mj-d0-hQw">
                                 <rect key="frame" x="169" y="28" width="258" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.45645703595126952" blue="0.0" alpha="0.43787677304964534" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.43787677304964534" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="6mj-d0-hQw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Wus-Ld-Ldh"/>
-                            <constraint firstItem="6mj-d0-hQw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fRH-qm-REG"/>
-                            <constraint firstItem="eLb-17-bGQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gow-ml-sFp"/>
-                            <constraint firstItem="eLb-17-bGQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sjA-gN-0er"/>
+                            <constraint firstItem="eLb-17-bGQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Fe-dM-6gb"/>
+                            <constraint firstItem="eLb-17-bGQ" firstAttribute="top" secondItem="6mj-d0-hQw" secondAttribute="bottom" constant="324" id="WL9-PL-4dk"/>
+                            <constraint firstItem="6mj-d0-hQw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Ywi-Dz-B3x"/>
+                            <constraint firstItem="6mj-d0-hQw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jZ4-AD-Ip2"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -73,7 +73,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Answer Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkq-8k-wfp" userLabel="q1Answer">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Answer Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkq-8k-wfp" userLabel="q1Answer">
                                 <rect key="frame" x="232" y="169" width="137" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -131,16 +131,33 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vaj-bi-AEj">
+                                <rect key="frame" x="258" y="290" width="85" height="30"/>
+                                <state key="normal" title="Restart Quiz"/>
+                                <connections>
+                                    <action selector="restartPressed:" destination="27T-or-6mr" eventType="touchUpInside" id="rVQ-LU-CAT"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="How'd you do?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3R-Cv-BJC">
+                                <rect key="frame" x="185" y="172" width="231" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Vaj-bi-AEj" firstAttribute="top" secondItem="pdc-ny-5Bh" secondAttribute="bottom" constant="155" id="1ab-zF-JKN"/>
                             <constraint firstItem="pdc-ny-5Bh" firstAttribute="top" secondItem="ULB-Do-NW1" secondAttribute="bottom" constant="56" id="5aD-jZ-T0U"/>
                             <constraint firstItem="pdc-ny-5Bh" firstAttribute="centerX" secondItem="pcu-vW-YHb" secondAttribute="centerX" id="BCV-ZA-hh1"/>
+                            <constraint firstItem="Vaj-bi-AEj" firstAttribute="centerX" secondItem="pcu-vW-YHb" secondAttribute="centerX" id="Jaf-qj-0iz"/>
+                            <constraint firstItem="I3R-Cv-BJC" firstAttribute="centerX" secondItem="pcu-vW-YHb" secondAttribute="centerX" id="TDU-F9-yIb"/>
                             <constraint firstItem="ULB-Do-NW1" firstAttribute="centerX" secondItem="pcu-vW-YHb" secondAttribute="centerX" id="VWG-Uf-Zw0"/>
                             <constraint firstItem="ULB-Do-NW1" firstAttribute="top" secondItem="lZ4-ZD-IbS" secondAttribute="bottom" constant="8" id="dPt-JG-Jan"/>
+                            <constraint firstItem="I3R-Cv-BJC" firstAttribute="top" secondItem="pdc-ny-5Bh" secondAttribute="bottom" constant="37" id="hnh-WG-eXY"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="resultsAlert" destination="I3R-Cv-BJC" id="B2f-AE-GhQ"/>
                         <outlet property="resultsText" destination="pdc-ny-5Bh" id="1lY-53-7CX"/>
                     </connections>
                 </viewController>
@@ -180,10 +197,10 @@
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextPressed:" destination="3mj-i4-5GF" eventType="touchUpInside" id="rhg-G4-yQh"/>
-                                    <segue destination="27T-or-6mr" kind="show" id="H13-9j-tpj"/>
+                                    <segue destination="I7I-rA-lpB" kind="show" id="wSH-tI-AWK"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Answer Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z1a-vL-So4">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Answer Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z1a-vL-So4">
                                 <rect key="frame" x="229" y="247" width="142" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -211,6 +228,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PaT-wN-LEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1062" y="1115"/>
+        </scene>
+        <!--q3-->
+        <scene sceneID="ICd-In-foc">
+            <objects>
+                <viewController id="I7I-rA-lpB" customClass="q3" customModule="hw1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jjt-pL-GtI"/>
+                        <viewControllerLayoutGuide type="bottom" id="H5I-Pv-ecI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Jd-r4-uf4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycw-0S-F2u">
+                                <rect key="frame" x="258" y="28" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Answer Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QNe-vp-vX7">
+                                <rect key="frame" x="231" y="211" width="139" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="am8-XB-dpx">
+                                <rect key="frame" x="284" y="331" width="32" height="30"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextPressed:" destination="I7I-rA-lpB" eventType="touchUpInside" id="NMp-iU-11k"/>
+                                    <segue destination="27T-or-6mr" kind="show" id="xcx-gC-3qK"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="How many Grammy awards has Kanye West won? " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="x4e-bl-LgR">
+                                <rect key="frame" x="180" y="66" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="am8-XB-dpx" firstAttribute="top" secondItem="QNe-vp-vX7" secondAttribute="bottom" constant="90" id="XvR-ij-ZE0"/>
+                            <constraint firstItem="Ycw-0S-F2u" firstAttribute="top" secondItem="jjt-pL-GtI" secondAttribute="bottom" constant="8" id="kdr-re-vwJ"/>
+                            <constraint firstItem="QNe-vp-vX7" firstAttribute="centerX" secondItem="4Jd-r4-uf4" secondAttribute="centerX" id="nbs-s5-LkX"/>
+                            <constraint firstItem="am8-XB-dpx" firstAttribute="centerX" secondItem="4Jd-r4-uf4" secondAttribute="centerX" id="vhc-ba-qVm"/>
+                            <constraint firstItem="x4e-bl-LgR" firstAttribute="centerX" secondItem="4Jd-r4-uf4" secondAttribute="centerX" id="wio-m5-WOo"/>
+                            <constraint firstItem="Ycw-0S-F2u" firstAttribute="centerX" secondItem="4Jd-r4-uf4" secondAttribute="centerX" id="xVP-dd-YuO"/>
+                            <constraint firstItem="x4e-bl-LgR" firstAttribute="top" secondItem="Ycw-0S-F2u" secondAttribute="bottom" constant="17" id="zbT-S9-wyd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="q3Answer" destination="QNe-vp-vX7" id="u9A-AZ-0GY"/>
+                        <outlet property="q3Label" destination="Ycw-0S-F2u" id="X2M-qr-GsU"/>
+                        <outlet property="q3Question" destination="x4e-bl-LgR" id="M3q-7Q-2aM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="81M-Xi-PFs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1770" y="1115"/>
         </scene>
     </scenes>
     <resources>
