@@ -20,6 +20,7 @@ class q3: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,7 +30,8 @@ class q3: UIViewController {
     
     
     @IBAction func nextPressed(sender: AnyObject) {
-        if q3Solution == Int(q3Answer.text!)! {
+        let intq3Answer:Int? = Int(q3Answer.text!)
+        if q3Solution == intq3Answer {
             correctAnswers += 1;
         }
     }

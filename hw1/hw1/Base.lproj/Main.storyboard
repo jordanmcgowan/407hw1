@@ -136,6 +136,7 @@
                                 <state key="normal" title="Restart Quiz"/>
                                 <connections>
                                     <action selector="restartPressed:" destination="27T-or-6mr" eventType="touchUpInside" id="rVQ-LU-CAT"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="607-Z6-QoN"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="How'd you do?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3R-Cv-BJC">

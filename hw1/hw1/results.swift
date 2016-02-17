@@ -18,16 +18,16 @@ class results: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         resultsText.text = String(correctAnswers) + "/" + String(numQuestions);
-        if correctAnswers == 3 {
+        if Double(correctAnswers/numQuestions) >= 0.9 {
             resultsAlert.text = "Great work, you're a Ye enthusiast!"
         }
-        else if correctAnswers == 2 {
+        else if Double(correctAnswers/numQuestions) < 0.9 && Double(correctAnswers/numQuestions) >= 0.6{
             resultsAlert.text = "Nice! You tried, but this makes Kanye sad..."
         }
-        else if correctAnswers == 1 {
+        else if Double(correctAnswers/numQuestions) > 0.6 && Double(correctAnswers/numQuestions) >= 0.4{
             resultsAlert.text = "Man...You should read up on Mr. West!"
         }
-        else if correctAnswers == 0 {
+        else if Double(correctAnswers/numQuestions) < 0.4 {
             resultsAlert.text = "Wow! Kanye is pissed..."
         }
     }
