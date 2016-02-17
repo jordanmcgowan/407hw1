@@ -23,7 +23,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="F30-p9-HFa" kind="show" id="1if-SM-iir"/>
+                                    <segue destination="F30-p9-HFa" kind="show" id="YKk-V3-b6j"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Welcome to 'The Quiz of The Life'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mj-d0-hQw">
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="382" y="375"/>
         </scene>
-        <!--View Controller-->
+        <!--q1-->
         <scene sceneID="eKJ-PN-xIE">
             <objects>
-                <viewController id="F30-p9-HFa" sceneMemberID="viewController">
+                <viewController id="F30-p9-HFa" customClass="q1" customModule="hw1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WQC-CK-EZs"/>
                         <viewControllerLayoutGuide type="bottom" id="F6a-2h-hf8"/>
@@ -73,7 +73,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Answer Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkq-8k-wfp">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Answer Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkq-8k-wfp" userLabel="q1Answer">
                                 <rect key="frame" x="232" y="169" width="137" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -82,7 +82,8 @@
                                 <rect key="frame" x="284" y="285" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="3mj-i4-5GF" kind="show" id="Jwo-iH-y0B"/>
+                                    <action selector="nextPressed:" destination="F30-p9-HFa" eventType="touchUpInside" id="b0t-zF-VBH"/>
+                                    <segue destination="3mj-i4-5GF" kind="show" id="sSv-Zm-OhT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -98,15 +99,19 @@
                             <constraint firstItem="KpC-se-rRY" firstAttribute="centerX" secondItem="I73-lr-997" secondAttribute="centerX" id="wJS-VE-tOV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answer" destination="kkq-8k-wfp" id="DJb-z1-7xR"/>
+                        <outlet property="question" destination="KpC-se-rRY" id="yl8-r1-Rz6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUk-Av-yPt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="382" y="1115"/>
         </scene>
-        <!--View Controller-->
+        <!--Results-->
         <scene sceneID="hwf-9A-kJ4">
             <objects>
-                <viewController id="27T-or-6mr" sceneMemberID="viewController">
+                <viewController id="27T-or-6mr" customClass="results" customModule="hw1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lZ4-ZD-IbS"/>
                         <viewControllerLayoutGuide type="bottom" id="8zK-OH-DOf"/>
@@ -121,22 +126,32 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pdc-ny-5Bh">
+                                <rect key="frame" x="252" y="105" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="pdc-ny-5Bh" firstAttribute="top" secondItem="ULB-Do-NW1" secondAttribute="bottom" constant="56" id="5aD-jZ-T0U"/>
+                            <constraint firstItem="pdc-ny-5Bh" firstAttribute="centerX" secondItem="pcu-vW-YHb" secondAttribute="centerX" id="BCV-ZA-hh1"/>
                             <constraint firstItem="ULB-Do-NW1" firstAttribute="centerX" secondItem="pcu-vW-YHb" secondAttribute="centerX" id="VWG-Uf-Zw0"/>
                             <constraint firstItem="ULB-Do-NW1" firstAttribute="top" secondItem="lZ4-ZD-IbS" secondAttribute="bottom" constant="8" id="dPt-JG-Jan"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultsText" destination="pdc-ny-5Bh" id="1lY-53-7CX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGY-WJ-xUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1062" y="375"/>
         </scene>
-        <!--View Controller-->
+        <!--q2-->
         <scene sceneID="0EF-df-eqQ">
             <objects>
-                <viewController id="3mj-i4-5GF" sceneMemberID="viewController">
+                <viewController id="3mj-i4-5GF" customClass="q2" customModule="hw1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1FF-Ce-xGx"/>
                         <viewControllerLayoutGuide type="bottom" id="znY-U7-UNX"/>
@@ -164,7 +179,8 @@
                                 <rect key="frame" x="284" y="285" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="27T-or-6mr" kind="show" id="Dsz-XX-sd3"/>
+                                    <action selector="nextPressed:" destination="3mj-i4-5GF" eventType="touchUpInside" id="rhg-G4-yQh"/>
+                                    <segue destination="27T-or-6mr" kind="show" id="H13-9j-tpj"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Answer Here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z1a-vL-So4">
@@ -187,6 +203,10 @@
                             <constraint firstItem="xJU-g1-YBF" firstAttribute="centerX" secondItem="Ica-uh-tMT" secondAttribute="centerX" id="sjS-W4-8pP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="answer" destination="z1a-vL-So4" id="cZR-d9-jjL"/>
+                        <outlet property="question" destination="wMy-cc-thN" id="Fna-IM-QZ9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PaT-wN-LEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
