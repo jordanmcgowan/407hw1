@@ -33,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.43787677304964534" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="eLb-17-bGQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Fe-dM-6gb"/>
                             <constraint firstItem="eLb-17-bGQ" firstAttribute="top" secondItem="6mj-d0-hQw" secondAttribute="bottom" constant="324" id="WL9-PL-4dk"/>
@@ -61,15 +61,16 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXU-Sf-Jcb">
                                 <rect key="frame" x="260" y="28" width="81" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="What is the name of the most recent Kanye West album?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KpC-se-rRY">
                                 <rect key="frame" x="211" y="74" width="178" height="63"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="178" id="cCl-Yb-rj3"/>
                                 </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -78,8 +79,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCQ-Ru-qEJ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCQ-Ru-qEJ">
                                 <rect key="frame" x="284" y="285" width="32" height="30"/>
+                                <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextPressed:" destination="F30-p9-HFa" eventType="touchUpInside" id="b0t-zF-VBH"/>
@@ -87,13 +89,13 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uCQ-Ru-qEJ" firstAttribute="centerX" secondItem="I73-lr-997" secondAttribute="centerX" id="5wl-0Z-VXI"/>
+                            <constraint firstItem="uCQ-Ru-qEJ" firstAttribute="top" secondItem="WQC-CK-EZs" secondAttribute="bottom" constant="265" id="9D9-Dh-D5A"/>
                             <constraint firstItem="kXU-Sf-Jcb" firstAttribute="centerX" secondItem="I73-lr-997" secondAttribute="centerX" id="Acd-cB-bwX"/>
                             <constraint firstItem="kXU-Sf-Jcb" firstAttribute="top" secondItem="WQC-CK-EZs" secondAttribute="bottom" constant="8" id="Gf6-7S-das"/>
                             <constraint firstItem="kkq-8k-wfp" firstAttribute="centerX" secondItem="I73-lr-997" secondAttribute="centerX" id="OKS-gP-Zsp"/>
-                            <constraint firstItem="uCQ-Ru-qEJ" firstAttribute="top" secondItem="kkq-8k-wfp" secondAttribute="bottom" constant="86" id="XPd-cj-76u"/>
                             <constraint firstItem="KpC-se-rRY" firstAttribute="top" secondItem="WQC-CK-EZs" secondAttribute="bottom" constant="54" id="aHH-qJ-REi"/>
                             <constraint firstItem="kkq-8k-wfp" firstAttribute="top" secondItem="KpC-se-rRY" secondAttribute="bottom" constant="32" id="r6g-tl-tbZ"/>
                             <constraint firstItem="KpC-se-rRY" firstAttribute="centerX" secondItem="I73-lr-997" secondAttribute="centerX" id="wJS-VE-tOV"/>
@@ -123,17 +125,19 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULB-Do-NW1">
                                 <rect key="frame" x="272" y="28" width="56" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pdc-ny-5Bh">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pdc-ny-5Bh">
                                 <rect key="frame" x="252" y="105" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vaj-bi-AEj">
                                 <rect key="frame" x="258" y="290" width="85" height="30"/>
-                                <state key="normal" title="Restart Quiz"/>
+                                <state key="normal" title="Restart Quiz">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="restartPressed:" destination="27T-or-6mr" eventType="touchUpInside" id="rVQ-LU-CAT"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="607-Z6-QoN"/>
@@ -141,11 +145,12 @@
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="How'd you do?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I3R-Cv-BJC">
                                 <rect key="frame" x="185" y="172" width="231" height="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Vaj-bi-AEj" firstAttribute="top" secondItem="pdc-ny-5Bh" secondAttribute="bottom" constant="155" id="1ab-zF-JKN"/>
                             <constraint firstItem="pdc-ny-5Bh" firstAttribute="top" secondItem="ULB-Do-NW1" secondAttribute="bottom" constant="56" id="5aD-jZ-T0U"/>
@@ -166,6 +171,93 @@
             </objects>
             <point key="canvasLocation" x="1062" y="375"/>
         </scene>
+        <!--q4-->
+        <scene sceneID="ZiJ-gS-aDL">
+            <objects>
+                <viewController id="vnQ-DB-k0Y" customClass="q4" customModule="hw1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sn9-cv-h2w"/>
+                        <viewControllerLayoutGuide type="bottom" id="PGy-c5-Bng"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D7e-vx-ppK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Question 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9IG-r6-iv1">
+                                <rect key="frame" x="258" y="20" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="What is the Name of Kanye West's first child?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iA8-Ql-xi3">
+                                <rect key="frame" x="180" y="54" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWV-oU-Pro">
+                                <rect key="frame" x="280" y="103" width="40" height="30"/>
+                                <state key="normal" title="North">
+                                    <color key="titleColor" red="0.74408949607329844" green="0.27365892944122944" blue="0.12995332268979479" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="northPressed:" destination="vnQ-DB-k0Y" eventType="touchUpInside" id="WMi-ef-P8n"/>
+                                    <segue destination="27T-or-6mr" kind="show" id="oqz-kX-zmL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbN-8J-OIW">
+                                <rect key="frame" x="280" y="141" width="41" height="30"/>
+                                <state key="normal" title="South">
+                                    <color key="titleColor" red="0.74408949607329844" green="0.27365892944122944" blue="0.12995332268979479" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="southPressed:" destination="vnQ-DB-k0Y" eventType="touchUpInside" id="uVf-P6-P6q"/>
+                                    <segue destination="27T-or-6mr" kind="show" id="ZX3-jM-F6K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBS-Z6-uHQ">
+                                <rect key="frame" x="285" y="174" width="30" height="30"/>
+                                <state key="normal" title="East">
+                                    <color key="titleColor" red="0.74408949607329844" green="0.27365892944122944" blue="0.12995332268979479" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="eastPressed:" destination="vnQ-DB-k0Y" eventType="touchUpInside" id="Lke-yz-Rt7"/>
+                                    <segue destination="27T-or-6mr" kind="show" id="NYe-rA-B1a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjA-Y8-PhS">
+                                <rect key="frame" x="283" y="212" width="35" height="30"/>
+                                <state key="normal" title="West">
+                                    <color key="titleColor" red="0.74408949607329844" green="0.27365892944122944" blue="0.12995332268979479" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="westPressed:" destination="vnQ-DB-k0Y" eventType="touchUpInside" id="0Lc-vI-VR2"/>
+                                    <segue destination="27T-or-6mr" kind="show" id="mdI-vz-ddg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iA8-Ql-xi3" firstAttribute="top" secondItem="9IG-r6-iv1" secondAttribute="bottom" constant="13" id="C9D-AC-Hri"/>
+                            <constraint firstItem="ZBS-Z6-uHQ" firstAttribute="centerX" secondItem="D7e-vx-ppK" secondAttribute="centerX" id="D58-Vn-fee"/>
+                            <constraint firstItem="HbN-8J-OIW" firstAttribute="top" secondItem="VWV-oU-Pro" secondAttribute="bottom" constant="8" id="E6H-Gh-lMp"/>
+                            <constraint firstItem="cjA-Y8-PhS" firstAttribute="top" secondItem="ZBS-Z6-uHQ" secondAttribute="bottom" constant="8" id="Koj-xx-OPH"/>
+                            <constraint firstItem="9IG-r6-iv1" firstAttribute="centerX" secondItem="D7e-vx-ppK" secondAttribute="centerX" id="M7E-77-g1A"/>
+                            <constraint firstItem="VWV-oU-Pro" firstAttribute="leading" secondItem="iA8-Ql-xi3" secondAttribute="trailing" constant="-140" id="Mtb-qZ-GlS"/>
+                            <constraint firstItem="HbN-8J-OIW" firstAttribute="centerX" secondItem="D7e-vx-ppK" secondAttribute="centerX" id="PsG-Kt-UnB"/>
+                            <constraint firstItem="cjA-Y8-PhS" firstAttribute="centerX" secondItem="D7e-vx-ppK" secondAttribute="centerX" id="ZMq-gI-tFd"/>
+                            <constraint firstItem="ZBS-Z6-uHQ" firstAttribute="top" secondItem="HbN-8J-OIW" secondAttribute="bottom" constant="3" id="aCH-zg-5gu"/>
+                            <constraint firstItem="iA8-Ql-xi3" firstAttribute="centerX" secondItem="D7e-vx-ppK" secondAttribute="centerX" id="dz4-LW-HNh"/>
+                            <constraint firstItem="VWV-oU-Pro" firstAttribute="centerX" secondItem="D7e-vx-ppK" secondAttribute="centerX" id="gLD-Zj-Kri"/>
+                            <constraint firstItem="VWV-oU-Pro" firstAttribute="top" secondItem="iA8-Ql-xi3" secondAttribute="bottom" constant="-79" id="s5f-iK-lau"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8b4-YM-te8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1770" y="375"/>
+        </scene>
         <!--q2-->
         <scene sceneID="0EF-df-eqQ">
             <objects>
@@ -181,21 +273,24 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJU-g1-YBF">
                                 <rect key="frame" x="258" y="28" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="What Kanye album is this image the cover of? " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wMy-cc-thN">
                                 <rect key="frame" x="180" y="175" width="240" height="49"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s-l96.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Q1m-mN-Org">
                                 <rect key="frame" x="252" y="57" width="96" height="96"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwC-1Q-ac2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwC-1Q-ac2">
                                 <rect key="frame" x="284" y="285" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="nextPressed:" destination="3mj-i4-5GF" eventType="touchUpInside" id="rhg-G4-yQh"/>
                                     <segue destination="I7I-rA-lpB" kind="show" id="wSH-tI-AWK"/>
@@ -207,14 +302,14 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wMy-cc-thN" firstAttribute="top" secondItem="Q1m-mN-Org" secondAttribute="bottom" constant="22" id="AEy-zc-iKo"/>
-                            <constraint firstItem="pwC-1Q-ac2" firstAttribute="top" secondItem="z1a-vL-So4" secondAttribute="bottom" constant="23" id="G1L-WD-l9e"/>
                             <constraint firstItem="z1a-vL-So4" firstAttribute="top" secondItem="wMy-cc-thN" secondAttribute="bottom" constant="21" id="ICy-u6-e0c"/>
                             <constraint firstItem="xJU-g1-YBF" firstAttribute="top" secondItem="1FF-Ce-xGx" secondAttribute="bottom" constant="8" id="INu-5C-C17"/>
                             <constraint firstItem="Q1m-mN-Org" firstAttribute="top" secondItem="xJU-g1-YBF" secondAttribute="bottom" constant="8" id="Kvf-BE-lTD"/>
                             <constraint firstItem="pwC-1Q-ac2" firstAttribute="centerX" secondItem="Ica-uh-tMT" secondAttribute="centerX" id="TDR-2c-vEO"/>
+                            <constraint firstItem="pwC-1Q-ac2" firstAttribute="top" secondItem="1FF-Ce-xGx" secondAttribute="bottom" constant="265" id="VZb-6p-Adr"/>
                             <constraint firstItem="wMy-cc-thN" firstAttribute="centerX" secondItem="Ica-uh-tMT" secondAttribute="centerX" id="WSD-j1-eYe"/>
                             <constraint firstItem="Q1m-mN-Org" firstAttribute="centerX" secondItem="Ica-uh-tMT" secondAttribute="centerX" id="nRF-q3-0Id"/>
                             <constraint firstItem="z1a-vL-So4" firstAttribute="centerX" secondItem="Ica-uh-tMT" secondAttribute="centerX" id="qf9-0X-Uv9"/>
@@ -245,7 +340,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycw-0S-F2u">
                                 <rect key="frame" x="258" y="28" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Answer Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QNe-vp-vX7">
@@ -253,27 +348,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="am8-XB-dpx">
-                                <rect key="frame" x="284" y="331" width="32" height="30"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="nextPressed:" destination="I7I-rA-lpB" eventType="touchUpInside" id="NMp-iU-11k"/>
-                                    <segue destination="27T-or-6mr" kind="show" id="xcx-gC-3qK"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="How many Grammy awards has Kanye West won? " textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="x4e-bl-LgR">
                                 <rect key="frame" x="180" y="66" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="am8-XB-dpx">
+                                <rect key="frame" x="284" y="285" width="32" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextPressed:" destination="I7I-rA-lpB" eventType="touchUpInside" id="NMp-iU-11k"/>
+                                    <segue destination="vnQ-DB-k0Y" kind="show" id="t3R-cN-680"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="am8-XB-dpx" firstAttribute="top" secondItem="QNe-vp-vX7" secondAttribute="bottom" constant="90" id="XvR-ij-ZE0"/>
+                            <constraint firstItem="am8-XB-dpx" firstAttribute="top" secondItem="jjt-pL-GtI" secondAttribute="bottom" constant="265" id="FwX-A4-N0G"/>
                             <constraint firstItem="Ycw-0S-F2u" firstAttribute="top" secondItem="jjt-pL-GtI" secondAttribute="bottom" constant="8" id="kdr-re-vwJ"/>
                             <constraint firstItem="QNe-vp-vX7" firstAttribute="centerX" secondItem="4Jd-r4-uf4" secondAttribute="centerX" id="nbs-s5-LkX"/>
-                            <constraint firstItem="am8-XB-dpx" firstAttribute="centerX" secondItem="4Jd-r4-uf4" secondAttribute="centerX" id="vhc-ba-qVm"/>
+                            <constraint firstItem="am8-XB-dpx" firstAttribute="centerX" secondItem="4Jd-r4-uf4" secondAttribute="centerX" id="vPD-Bf-77Q"/>
                             <constraint firstItem="x4e-bl-LgR" firstAttribute="centerX" secondItem="4Jd-r4-uf4" secondAttribute="centerX" id="wio-m5-WOo"/>
                             <constraint firstItem="Ycw-0S-F2u" firstAttribute="centerX" secondItem="4Jd-r4-uf4" secondAttribute="centerX" id="xVP-dd-YuO"/>
                             <constraint firstItem="x4e-bl-LgR" firstAttribute="top" secondItem="Ycw-0S-F2u" secondAttribute="bottom" constant="17" id="zbT-S9-wyd"/>
@@ -293,4 +391,7 @@
     <resources>
         <image name="s-l96.jpg" width="96" height="96"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="oqz-kX-zmL"/>
+    </inferredMetricsTieBreakers>
 </document>

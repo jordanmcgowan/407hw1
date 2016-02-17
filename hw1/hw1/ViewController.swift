@@ -7,11 +7,12 @@
 //
 
 import UIKit
-var correctAnswers = 0;
-var numQuestions = 3;
+var correctAnswers = 0.0;
+var numQuestions = 4.0;
 var q1Solution = "The Life Of Pablo";
 var q2Solution = "The College Dropout";
 var q3Solution = 21;
+//Answer to Q4 is "North"
 
 class ViewController: UIViewController {
     

@@ -18,16 +18,17 @@ class results: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         resultsText.text = String(correctAnswers) + "/" + String(numQuestions);
-        if Double(correctAnswers/numQuestions) >= 0.9 {
+        let percentage = correctAnswers/numQuestions
+        if percentage >= 0.9 {
             resultsAlert.text = "Great work, you're a Ye enthusiast!"
         }
-        else if Double(correctAnswers/numQuestions) < 0.9 && Double(correctAnswers/numQuestions) >= 0.6{
+        else if percentage < 0.9 && percentage >= 0.6{
             resultsAlert.text = "Nice! You tried, but this makes Kanye sad..."
         }
-        else if Double(correctAnswers/numQuestions) > 0.6 && Double(correctAnswers/numQuestions) >= 0.4{
+        else if percentage < 0.6 && percentage >= 0.25{
             resultsAlert.text = "Man...You should read up on Mr. West!"
         }
-        else if Double(correctAnswers/numQuestions) < 0.4 {
+        else if percentage < 0.25 {
             resultsAlert.text = "Wow! Kanye is pissed..."
         }
     }
