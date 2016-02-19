@@ -13,6 +13,8 @@ class results: UIViewController {
 
     @IBOutlet weak var resultsText: UITextField!
     @IBOutlet weak var resultsAlert: UITextField!
+    @IBOutlet weak var solutionBox: UITextView!
+    var passed = String!()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,10 @@ class results: UIViewController {
         else if percentage < 0.25 {
             resultsAlert.text = "Wow! Kanye is pissed..."
         }
+
+        //solutionBox.text = passed;
+        
+        
     }
     
     override func didReceiveMemoryWarning() {

@@ -14,6 +14,7 @@ var q2Solution = "The College Dropout";
 var q3Solution = 21;
 //Answer to Q4 is "North"
 
+
 class ViewController: UIViewController {
     
 

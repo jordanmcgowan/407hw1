@@ -9,6 +9,8 @@ import UIKit
 
 class q4: UIViewController {
     
+    var test = "This is a test"
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +21,14 @@ class q4: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    /*
+    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if (segue.identifier == "northSegue"){
+            DestViewController.passed = "Test";
+        }
+        
+    }
+    */
     
     @IBAction func northPressed(sender: AnyObject) {
         correctAnswers += 1;
@@ -30,4 +40,5 @@ class q4: UIViewController {
     @IBAction func westPressed(sender: AnyObject) {
     }
     
+
 }
