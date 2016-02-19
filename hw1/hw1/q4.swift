@@ -9,7 +9,10 @@ import UIKit
 
 class q4: UIViewController {
     
-    var test = "This is a test"
+    var q1Answer:NSString = ""
+    var q2Answer:NSString = ""
+    var q3Answer:NSString = ""
+    var buttonPushed = ""
     
     
     override func viewDidLoad() {
@@ -32,12 +35,29 @@ class q4: UIViewController {
     
     @IBAction func northPressed(sender: AnyObject) {
         correctAnswers += 1;
+        buttonPushed = "North"
     }
     @IBAction func southPressed(sender: AnyObject) {
+        buttonPushed = "South"
     }
     @IBAction func eastPressed(sender: AnyObject) {
+        buttonPushed = "East"
     }
     @IBAction func westPressed(sender: AnyObject) {
+        buttonPushed = "West"
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if (segue.identifier == "toResults") {
+            let vc:results = segue.destinationViewController as! results
+            vc.q1Answer = q1Answer
+            vc.q2Answer = q2Answer
+            vc.q3Answer = q3Answer
+            vc.q4Answer = buttonPushed
+            
+            
+        }
     }
     
 

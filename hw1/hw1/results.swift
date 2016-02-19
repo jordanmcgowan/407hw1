@@ -10,11 +10,16 @@ import UIKit
 
 class results: UIViewController {
     
+    var q1Answer:NSString = ""
+    var q2Answer:NSString = ""
+    var q3Answer:NSString = ""
+    var q4Answer:NSString = ""
+    
 
     @IBOutlet weak var resultsText: UITextField!
     @IBOutlet weak var resultsAlert: UITextField!
-    @IBOutlet weak var solutionBox: UITextView!
     var passed = String!()
+    @IBOutlet weak var solutions: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,9 +39,7 @@ class results: UIViewController {
             resultsAlert.text = "Wow! Kanye is pissed..."
         }
 
-        //solutionBox.text = passed;
-        
-        
+        solutions.text = "Your answers: \n" + (q1Answer as String) + "\n" + (q2Answer as String) + "\n" + (q3Answer as String) + "\n" + (q4Answer as String)
     }
     
     override func didReceiveMemoryWarning() {

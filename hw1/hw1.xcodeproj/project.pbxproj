@@ -127,9 +127,9 @@
 				4BF09E941C7135D4002EB7B5 /* Info.plist */,
 				4B4E1FBC1C74149C00813425 /* q1.swift */,
 				4B4E1FBE1C74153100813425 /* q2.swift */,
-				4B4E1FC01C74154300813425 /* results.swift */,
 				4B4E1FC61C74E19900813425 /* q3.swift */,
 				4B4E1FC81C7518A900813425 /* q4.swift */,
+				4B4E1FC01C74154300813425 /* results.swift */,
 			);
 			path = hw1;
 			sourceTree = "<group>";

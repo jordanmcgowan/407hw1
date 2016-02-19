@@ -85,7 +85,7 @@
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="nextPressed:" destination="F30-p9-HFa" eventType="touchUpInside" id="b0t-zF-VBH"/>
-                                    <segue destination="3mj-i4-5GF" kind="show" id="sSv-Zm-OhT"/>
+                                    <segue destination="3mj-i4-5GF" kind="show" identifier="toq2" id="sSv-Zm-OhT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -149,6 +149,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="adZ-yD-gxD">
+                                <rect key="frame" x="180" y="321" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -158,13 +164,16 @@
                             <constraint firstItem="Vaj-bi-AEj" firstAttribute="centerX" secondItem="pcu-vW-YHb" secondAttribute="centerX" id="Jaf-qj-0iz"/>
                             <constraint firstItem="I3R-Cv-BJC" firstAttribute="centerX" secondItem="pcu-vW-YHb" secondAttribute="centerX" id="TDU-F9-yIb"/>
                             <constraint firstItem="ULB-Do-NW1" firstAttribute="centerX" secondItem="pcu-vW-YHb" secondAttribute="centerX" id="VWG-Uf-Zw0"/>
+                            <constraint firstItem="adZ-yD-gxD" firstAttribute="centerX" secondItem="pcu-vW-YHb" secondAttribute="centerX" id="VkD-sd-Y56"/>
                             <constraint firstItem="ULB-Do-NW1" firstAttribute="top" secondItem="lZ4-ZD-IbS" secondAttribute="bottom" constant="8" id="dPt-JG-Jan"/>
                             <constraint firstItem="I3R-Cv-BJC" firstAttribute="top" secondItem="pdc-ny-5Bh" secondAttribute="bottom" constant="37" id="hnh-WG-eXY"/>
+                            <constraint firstItem="adZ-yD-gxD" firstAttribute="top" secondItem="Vaj-bi-AEj" secondAttribute="bottom" constant="1" id="yka-Ef-KFE"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="resultsAlert" destination="I3R-Cv-BJC" id="B2f-AE-GhQ"/>
                         <outlet property="resultsText" destination="pdc-ny-5Bh" id="1lY-53-7CX"/>
+                        <outlet property="solutions" destination="adZ-yD-gxD" id="60X-im-Rkn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGY-WJ-xUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -203,7 +212,7 @@
                                 </state>
                                 <connections>
                                     <action selector="northPressed:" destination="vnQ-DB-k0Y" eventType="touchUpInside" id="WMi-ef-P8n"/>
-                                    <segue destination="27T-or-6mr" kind="show" identifier="northSegue" id="oqz-kX-zmL"/>
+                                    <segue destination="27T-or-6mr" kind="show" identifier="toResults" id="oqz-kX-zmL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HbN-8J-OIW">
@@ -293,7 +302,7 @@
                                 </state>
                                 <connections>
                                     <action selector="nextPressed:" destination="3mj-i4-5GF" eventType="touchUpInside" id="rhg-G4-yQh"/>
-                                    <segue destination="I7I-rA-lpB" kind="show" id="wSH-tI-AWK"/>
+                                    <segue destination="I7I-rA-lpB" kind="show" identifier="toq3" id="wSH-tI-AWK"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Answer Here" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z1a-vL-So4">
@@ -362,7 +371,7 @@
                                 </state>
                                 <connections>
                                     <action selector="nextPressed:" destination="I7I-rA-lpB" eventType="touchUpInside" id="NMp-iU-11k"/>
-                                    <segue destination="vnQ-DB-k0Y" kind="show" id="t3R-cN-680"/>
+                                    <segue destination="vnQ-DB-k0Y" kind="show" identifier="toq4" id="t3R-cN-680"/>
                                 </connections>
                             </button>
                         </subviews>

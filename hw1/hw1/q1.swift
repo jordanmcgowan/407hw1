@@ -30,4 +30,12 @@ class q1: UIViewController {
         }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if (segue.identifier == "toq2") {
+            let vc:q2 = segue.destinationViewController as! q2
+            vc.q1Answer = answer.text!
+        }
+    }
+    
 }
